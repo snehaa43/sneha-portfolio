@@ -99,6 +99,9 @@ html {
   scroll-behavior: smooth;
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -108,7 +111,10 @@ body {
   line-height: 1.6;
   letter-spacing: -0.01em;
   transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
+  position: relative;
 }
 
 a {
@@ -136,6 +142,9 @@ ul, ol {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .container {
@@ -143,6 +152,7 @@ ul, ol {
   max-width: var(--container-max-width);
   margin: 0 auto;
   padding: 0 1.5rem;
+  box-sizing: border-box;
 }
 
 .section {
@@ -1095,6 +1105,14 @@ ul, ol {
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 0 1.25rem;
+  }
+  
+  .navbar-container {
+    padding: 0.85rem 1.25rem;
+  }
+  
   .desktop-nav {
     display: none;
   }
@@ -1104,39 +1122,77 @@ ul, ol {
   }
   
   .hero-section {
-    padding: 4rem 0 3.5rem;
+    padding: 3.5rem 0 3rem;
   }
   
   .hero-title {
-    font-size: 2.15rem;
+    font-size: 2rem;
+    word-break: break-word;
+    overflow-wrap: break-word;
   }
   
   .hero-subtitle {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
+    word-break: break-word;
   }
   
   .hero-description {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
   
-  .skills-grid {
-    grid-template-columns: 1fr;
+  .about-text {
+    font-size: 0.95rem;
+    word-break: break-word;
   }
   
   .projects-grid {
     grid-template-columns: 1fr;
   }
   
-  .more-projects-grid {
-    grid-template-columns: 1fr;
+  .project-card {
+    padding: 1.25rem;
   }
   
-  .certifications-grid {
-    grid-template-columns: 1fr;
+  .project-title {
+    font-size: 1.15rem;
+  }
+  
+  .mini-project-card {
+    padding: 1rem 1.25rem;
+  }
+  
+  .mini-project-main {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+  
+  .mini-project-name {
+    min-width: unset;
+    width: 100%;
+  }
+  
+  .certification-card {
+    padding: 1rem 1.25rem;
+    align-items: flex-start;
+  }
+  
+  .certification-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
   }
   
   .contact-links-grid {
     grid-template-columns: 1fr;
+  }
+  
+  .contact-card {
+    padding: 1rem 1.25rem;
+  }
+  
+  .contact-card-value {
+    word-break: break-all;
   }
   
   .footer-container {
@@ -1147,6 +1203,22 @@ ul, ol {
 }
 
 @media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .navbar-container {
+    padding: 0.75rem 1rem;
+  }
+  
+  .hero-title {
+    font-size: 1.75rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+  
   .hero-actions {
     flex-direction: column;
     width: 100%;
@@ -1154,5 +1226,21 @@ ul, ol {
   
   .hero-actions .btn {
     width: 100%;
+  }
+  
+  .project-card {
+    padding: 1rem;
+  }
+  
+  .mini-project-card {
+    padding: 0.9rem 1rem;
+  }
+  
+  .certification-card {
+    padding: 0.9rem 1rem;
+  }
+  
+  .contact-card {
+    padding: 0.9rem 1rem;
   }
 }
