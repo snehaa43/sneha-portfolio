@@ -1,16 +1,49 @@
-# React + Vite
+# Sneha Kumari — Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A clean, minimalist, and professional developer portfolio website built with **Next.js (App Router)** and **Vanilla CSS**.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Next.js App Router**: Optimized SSR and static page generation.
+- **Theme Toggle**: Seamless light and dark mode with `localStorage` persistence.
+- **Minimalist Black & White Design**: Recruiter-friendly typography and generous whitespace.
+- **Interactive About Section**: Expandable "Read More / Read Less" story.
+- **Featured & Additional Projects**: Live application previews and repository links.
+- **Certifications**: Showcase of verified industry certifications.
+- **Resume Integration**: Direct PDF download and tab view.
+- **Fully Responsive**: Mobile-first responsive navigation and layouts.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework**: Next.js 15+ (App Router)
+- **Language**: JavaScript (React 19)
+- **Styling**: Vanilla CSS (CSS Variables & Responsive Grid/Flexbox)
+- **Icons**: Custom Lightweight SVG Icons
+- **Typography**: Inter & JetBrains Mono (Google Fonts)
 
-## Expanding the Oxlint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+First, install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
+
+## 📦 Building for Production
+
+```bash
+npm run build
+npm start
+```
+
+## 📄 License
+
+MIT © [Sneha Kumari](https://github.com/snehaa43)
