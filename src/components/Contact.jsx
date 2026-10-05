@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState } from 'react';
 import { personalInfo } from '../data/portfolioData';
 import { MailIcon, GithubIcon, LinkedinIcon, ArrowUpRightIcon, CopyIcon, CheckIcon } from './Icons';
